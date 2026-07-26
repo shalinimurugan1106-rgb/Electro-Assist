@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+    <img src="images/navbar-logo.svg" alt="ElectroAssist Logo">
+    <span>ElectroAssist</span>
+</div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+    </ul>
+
+</nav>
+
+<section class="calculator">
+
+<h1>Electrical Power Calculator</h1>
+
+<p>Select any one calculation mode.</p>
+
+<div class="box">
+
+<label>Select Formula</label>
+
+<select id="mode">
+
+<option value="VI">Power (P = V × I)</option>
+
+<option value="VR">Power (P = V² / R)</option>
+
+<option value="IR">Power (P = I² × R)</option>
+
+</select>
+
+<br><br>
+
+<label>Voltage (V)</label>
+<input type="number" id="voltage">
+
+<label>Current (A)</label>
+<input type="number" id="current">
+
+<label>Resistance (Ω)</label>
+<input type="number" id="resistance">
+
+<button onclick="calculatePower()">
+Calculate
+</button>
+
+<button onclick="clearPower()">
+Clear
+</button>
+
+<h2 id="result"></h2>
+
+</div>
+
+</section>
+
+<script src="power.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Voltage Drop Calculator</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">
+    <img src="images/navbar-logo.svg" alt="ElectroAssist Logo">
+    <span>ElectroAssist</span>
+</div>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+</ul>
+
+</nav>
+
+<section class="calculator">
+
+<h1>Voltage Drop Calculator</h1>
+
+<p>Calculate voltage drop across a resistor or conductor.</p>
+
+<div class="box">
+
+<label>Current (A)</label>
+
+<br><br>
+
+<input type="number" id="current">
+
+<br><br>
+
+<label>Resistance (Ω)</label>
+
+<br><br>
+
+<input type="number" id="resistance">
+
+<br><br>
+
+<button onclick="calculateVoltageDrop()">
+
+Calculate
+
+</button>
+
+<button onclick="clearVoltageDrop()">
+
+Clear
+
+</button>
+
+<h2 id="result"></h2>
+
+</div>
+
+</section>
+
+<script src="voltagedrop.js"></script>
+
+</body>
+
+</html>

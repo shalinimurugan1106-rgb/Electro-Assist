@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Capacitor Calculator</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<nav class="navbar">
+
+<div class="logo">
+    <img src="images/navbar-logo.svg" alt="ElectroAssist Logo">
+    <span>ElectroAssist</span>
+</div>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+</ul>
+
+</nav>
+
+<section class="calculator">
+
+<h1>Capacitor Calculator</h1>
+
+<p>Select the calculation mode.</p>
+
+<div class="box">
+
+<label>Select Mode</label><br><br>
+
+<select id="mode">
+
+<option value="series">Series Capacitance</option>
+
+<option value="parallel">Parallel Capacitance</option>
+
+<option value="energy">Stored Energy</option>
+
+</select>
+
+<br><br>
+
+<label>Capacitor 1 (µF)</label><br>
+
+<input type="number" id="c1">
+
+<br><br>
+
+<label>Capacitor 2 (µF)</label><br>
+
+<input type="number" id="c2">
+
+<br><br>
+
+<label>Voltage (V) (Only for Energy)</label><br>
+
+<input type="number" id="voltage">
+
+<br><br>
+
+<button onclick="calculateCapacitor()">
+
+Calculate
+
+</button>
+
+<button onclick="clearCapacitor()">
+
+Clear
+
+</button>
+
+<h2 id="result"></h2>
+
+</div>
+
+</section>
+
+<script src="capacitor.js"></script>
+
+</body>
+</html>

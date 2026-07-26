@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroAssist - Circuit Troubleshooting Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+         <div class="logo">
+    <img src="images/navbar-logo.svg" alt="ElectroAssist Logo">
+    <span>ElectroAssist</span>
+</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Troubleshooting Section -->
+
+    <section class="calculator">
+
+        <h1>Circuit Troubleshooting Assistant</h1>
+
+        <p>
+            Select the category and problem to diagnose your electronic circuit.
+        </p>
+
+        <label><b>Select Category</b></label>
+
+<br><br>
+
+<select id="category">
+
+<option value="">-- Select Category --</option>
+
+<option value="PowerSupply">Power Supply</option>
+
+<option value="LED">LED</option>
+
+<option value="Resistor">Resistor</option>
+
+<option value="Capacitor">Capacitor</option>
+
+<option value="Transistor">Transistor</option>
+
+<option value="Arduino">Arduino</option>
+
+</select>
+
+<br><br>
+
+<label><b>Select Problem</b></label>
+
+<br><br>
+
+<select id="problem">
+
+<option value="">-- Select Problem --</option>
+
+</select>
+
+<br><br>
+
+<div id="questionBox" style="display:none;">
+
+<h3 id="question"></h3>
+
+<button onclick="answerQuestion(true)">YES</button>
+
+<button onclick="answerQuestion(false)">NO</button>
+
+</div>
+
+<br>
+
+<div id="result"></div>
+
+<br>
+
+<button onclick="startDiagnosis()">
+
+Start Diagnosis
+
+</button>
+
+<button onclick="clearDiagnosis()">
+
+Clear
+
+</button>
+
+            <br><br>
+
+            <!-- Result -->
+
+            <h2 id="result"></h2>
+
+        </div>
+
+    </section>
+
+    <!-- JavaScript -->
+
+
+    <script src="data.js"></script>
+<script src="questions.js"></script>
+<script src="troubleshoot.js"></script>
+
+</body>
+
+</html>

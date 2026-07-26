@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Voltage Divider Calculator</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">
+    <img src="images/navbar-logo.svg" alt="ElectroAssist Logo">
+    <span>ElectroAssist</span>
+</div>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+</ul>
+
+</nav>
+
+<section class="calculator">
+
+<h1>Voltage Divider Calculator</h1>
+
+<p>Calculate the output voltage of a voltage divider.</p>
+
+<div class="box">
+
+<label>Input Voltage (Vin)</label><br>
+<input type="number" id="vin"><br><br>
+
+<label>Resistor R1 (Ω)</label><br>
+<input type="number" id="r1"><br><br>
+
+<label>Resistor R2 (Ω)</label><br>
+<input type="number" id="r2"><br><br>
+
+<button onclick="calculateDivider()">Calculate</button>
+
+<button onclick="clearDivider()">Clear</button>
+
+<h2 id="result"></h2>
+
+</div>
+
+</section>
+
+<script src="divider.js"></script>
+
+</body>
+</html>

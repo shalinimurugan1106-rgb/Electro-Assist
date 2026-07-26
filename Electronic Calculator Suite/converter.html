@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Electronics Unit Converter</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">
+    <img src="images/navbar-logo.svg" alt="ElectroAssist Logo">
+    <span>ElectroAssist</span>
+</div>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+</ul>
+
+</nav>
+
+<section class="calculator">
+
+<h1>Electronics Unit Converter</h1>
+
+<p>Convert common electronics units.</p>
+
+<div class="box">
+
+<label>Select Quantity</label>
+
+<br><br>
+
+<select id="type">
+
+<option value="voltage">Voltage</option>
+
+<option value="current">Current</option>
+
+<option value="resistance">Resistance</option>
+
+<option value="capacitance">Capacitance</option>
+
+<option value="inductance">Inductance</option>
+
+<option value="power">Power</option>
+
+</select>
+
+<br><br>
+
+<label>Value</label>
+
+<br><br>
+
+<input type="number" id="value">
+
+<br><br>
+
+<label>From</label>
+
+<br><br>
+
+<select id="from"></select>
+
+<br><br>
+
+<label>To</label>
+
+<br><br>
+
+<select id="to"></select>
+
+<br><br>
+
+<button onclick="convertUnit()">
+
+Convert
+
+</button>
+
+<button onclick="clearConverter()">
+
+Clear
+
+</button>
+
+<h2 id="result"></h2>
+
+</div>
+
+</section>
+
+<script src="converter.js"></script>
+
+</body>
+
+</html>
