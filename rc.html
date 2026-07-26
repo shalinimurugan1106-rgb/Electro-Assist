@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RC Time Constant Calculator</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+
+    <div class="logo">
+    <img src="images/navbar-logo.svg" alt="ElectroAssist Logo">
+    <span>ElectroAssist</span>
+</div>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+</ul>
+
+</nav>
+
+<section class="calculator">
+
+<h1>RC Time Constant Calculator</h1>
+
+<p>Calculate the time constant (τ = R × C)</p>
+
+<div class="box">
+
+<label>Resistance (Ω)</label>
+
+<br><br>
+
+<input type="number" id="resistance">
+
+<br><br>
+
+<label>Capacitance (µF)</label>
+
+<br><br>
+
+<input type="number" id="capacitance">
+
+<br><br>
+
+<button onclick="calculateRC()">
+
+Calculate
+
+</button>
+
+<button onclick="clearRC()">
+
+Clear
+
+</button>
+
+<h2 id="result"></h2>
+
+</div>
+
+</section>
+
+<script src="rc.js"></script>
+
+</body>
+
+</html>

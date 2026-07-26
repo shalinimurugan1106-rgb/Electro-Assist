@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LED Resistor Calculator</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">
+    <img src="images/navbar-logo.svg" alt="ElectroAssist Logo">
+    <span>ElectroAssist</span>
+</div>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+</ul>
+
+</nav>
+
+<section class="calculator">
+
+<h1>LED Resistor Calculator</h1>
+
+<p>Calculate the required resistor for your LED circuit.</p>
+
+<div class="box">
+
+<label>Supply Voltage (V)</label><br>
+<input type="number" id="supply"><br><br>
+
+<label>LED Forward Voltage (V)</label><br>
+<input type="number" id="led"><br><br>
+
+<label>LED Current (mA)</label><br>
+<input type="number" id="current"><br><br>
+
+<button onclick="calculateLED()">Calculate</button>
+
+<button onclick="clearLED()">Clear</button>
+
+<h2 id="result"></h2>
+
+</div>
+
+</section>
+
+<script src="led.js"></script>
+
+</body>
+</html>

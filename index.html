@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Calculator Suite</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+    <img src="images/navbar-logo.svg" alt="ElectroAssist Logo">
+    <span>ElectroAssist</span>
+</div>
+
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#calculators">Calculators</a></li>
+                <li><a href="#troubleshooting">Troubleshooting</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button id="themeBtn">🌙</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <h1>ElectroAssist</h1>
+
+            <h3>Calculate • Diagnose • Learn</h3>
+
+
+<p>
+A comprehensive electronics toolkit offering calculators, guided circuit troubleshooting,
+and practical engineering tools for accurate and efficient problem-solving.
+</p>
+
+        <input type="text" id="searchBox"
+        placeholder="Search calculators..."
+        onkeydown="if(event.key==='Enter')
+        searchCalculator()">
+
+    </section>
+
+    <!-- Calculator Cards -->
+
+    <section id="calculators">
+
+        <h2>Calculators</h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <h3>Ohm's Law</h3>
+                <p>Calculate Voltage, Current and Resistance.</p>
+                <a href="ohms.html">
+                   <button>Open</button>
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>Power Calculator</h3>
+                <p>Calculate Electrical Power.</p>
+                <a href="power.html">
+                   <button>Open</button>
+                </a>
+                
+            </div>
+
+            <div class="card">
+                <h3>LED Resistor</h3>
+                <p>Find suitable resistor for LEDs.</p>
+                <a href="led.html">
+                    <button>Open</button>
+                </a>
+                
+            </div>
+
+            <div class="card">
+                <h3>Voltage Divider</h3>
+                <p>Calculate output voltage.</p>
+                <a href="divider.html">
+                    <button>Open</button>
+                </a>
+                
+            </div>
+
+            <div class="card">
+                <h3>Resistor Color Code</h3>
+                <p>Decode resistor colour bands.</p>
+                <a href="resistor.html">
+                    <button>Open</button>
+                </a>
+            </div>
+<div class="card">
+
+<h3>Capacitor Calculator</h3>
+
+<p>Series, Parallel and Energy Calculations</p>
+
+<a href="capacitor.html">
+
+<button>Open</button>
+
+</a>
+
+</div>
+<div class="card">
+
+<h3>RC Time Constant</h3>
+
+<p>Calculate RC circuit charging time.</p>
+
+<a href="rc.html">
+
+<button>Open</button>
+
+</a>
+
+</div> 
+
+<div class="card">
+
+<h3>RL Time Constant</h3>
+
+<p>Calculate RL circuit time constant.</p>
+
+<a href="rl.html">
+
+<button>Open</button>
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>Capacitive Reactance</h3>
+
+<p>Calculate Capacitive Reactance (XC).</p>
+
+<a href="xc.html">
+
+<button>Open</button>
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>Inductive Reactance</h3>
+
+<p>Calculate Inductive Reactance (XL).</p>
+
+<a href="xl.html">
+
+<button>Open</button>
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>Battery Life Calculator</h3>
+
+<p>Estimate battery backup time.</p>
+
+<a href="battery.html">
+
+<button>Open</button>
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>Voltage Drop Calculator</h3>
+
+<p>Calculate voltage drop using Ohm's Law.</p>
+
+<a href="voltagedrop.html">
+
+<button>Open</button>
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>Unit Converter</h3>
+
+<p>Convert voltage, current, resistance, capacitance, inductance and power.</p>
+
+<a href="converter.html">
+
+<button>Open</button>
+
+</a>
+
+</div>
+
+ <div class="card">
+
+    <h3>Formula Library</h3>
+
+    <p>Search important ECE formulas instantly.</p>
+
+    <a href="formulas.html">
+
+        <button>Open</button>
+
+    </a>
+
+</div>
+
+        </div>
+
+    </section>
+
+            
+
+    <!-- Troubleshooting -->
+
+    <section id="troubleshooting">
+        <div class="tool-card">
+
+    <div class="icon">
+         🛠️
+    </div>
+
+        <h2>Circuit Troubleshooting Assistant</h2>
+
+        
+       <p>
+Analyze and troubleshoot electronic circuits with a guided diagnostic assistant. Select your component, answer a few questions, and receive the most likely fault along with recommended solutions.
+</p>
+        
+<a href="troubleshoot.html">
+    <button>Start Troubleshooting</button>
+</a>
+        
+
+    </section>
+
+    
+
+    <!-- About -->
+
+    <section id="about">
+
+        
+
+       <h2>About ElectroAssist</h2>
+
+<p>
+ElectroAssist is a powerful web-based electronics engineering toolkit developed to assist students, engineers, and electronics enthusiasts. The platform features a wide range of electronics calculators, an interactive circuit troubleshooting assistant, and practical engineering resources, enabling users to perform accurate calculations, diagnose circuit faults, and improve their understanding of electronic systems through an intuitive and user-friendly interface.
+</p>
+
+    </section>
+
+    <!-- Contact -->
+
+    <section id="contact">
+
+        <h2>Contact</h2>
+
+        <p>Email : shalinimurugan1106@gmail.com</p>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 ElectroAssist | All Rights Reserved
+        </p>
+
+    </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
