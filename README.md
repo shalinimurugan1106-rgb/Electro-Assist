@@ -2,6 +2,10 @@
 
 ElectroAssist is a web-based electronics engineering toolkit developed using HTML, CSS, and JavaScript. It provides electronics calculators, an interactive circuit troubleshooting assistant, and engineering tools to help students, engineers, and electronics enthusiasts perform calculations and diagnose circuit issues efficiently.
 
+
+![ElectroAssist Logo](navbar-logo.svg)
+
+
 ## 🚀 Features
 
 - Ohm's Law Calculator
